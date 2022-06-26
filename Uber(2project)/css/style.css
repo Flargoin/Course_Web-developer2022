@@ -2,6 +2,8 @@
   font-family: "Roboto", sans-serif;
 }
 
+@blue-color : #1EACC7;
+@pink-color : #FF5656;
 .title {
   margin: 0;
   margin-top: 32px;
@@ -12,6 +14,9 @@
   text-transform: uppercase;
   color: #222222;
 }
+.title_white {
+  color: #fff;
+}
 
 .subtitle {
   font-weight: 400;
@@ -19,6 +24,9 @@
   text-align: center;
   color: #222222;
   text-align: center;
+}
+.subtitle_white {
+  color: #fff;
 }
 
 .label {
@@ -32,6 +40,10 @@
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+}
+.label_white {
+  background-color: #fff;
+  color: #000;
 }
 
 .header {
@@ -286,4 +298,38 @@ nav {
   border-radius: 100%;
   background: #000000;
   cursor: pointer;
+}
+
+.choice {
+  position: relative;
+  min-height: 898px;
+  padding: 59px 0 138px 0;
+  background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
+}
+.choice__label, .choice__title, .choice__subtitle {
+  position: relative;
+  z-index: 1;
+}
+.choice__img {
+  position: relative;
+  display: block;
+  margin: 54px auto 0 auto;
+  z-index: 2;
+}
+.choice__descr {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+}
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #070716;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
