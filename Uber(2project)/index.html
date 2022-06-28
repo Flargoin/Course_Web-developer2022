@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100,300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,7 @@
 <body>
     <header class="header">
         <nav>
-            <div class="container">
+            <div class="container header__container">
                 <ul class="header__menu">
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Главная</a></li>
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Со своим автомобилем</a></li>
@@ -372,5 +373,62 @@
             </div>
         </div>
     </section>
+
+    <section class="cities">
+        <div class="container">
+            <div class="choice__label label label_white">города</div>
+            <h2 class="title choice__title title_white">По всему миру</h2>
+            <div class="subtitle choice__subtitle subtitle_white">Мы в вашем городе и по всему миру</div>
+            <a href="#" class="cities__link">посмотреть все города</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divider"></div>
+
+        <div class="footer__wrapper">
+            <div class="footer__social social">
+                <a href="#" class="social__facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social__twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social__linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="social__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+    
+            <div class="footer__nav nav">
+                <div class="footer__nav-t">
+                    <a href="#">на главную</a>
+                    <a href="#">города</a>
+                    <a href="#">для водителей</a>
+                </div>
+                <div class="footer__nav-b">
+                    <a href="#">центр поддержки</a>
+                    <a href="#">вакансии</a>
+                    <a href="#">разработчики</a>
+                    <a href="#">блог</a>
+                    <a href="#">о нас</a>
+                </div>
+                <a href="" class="footer__nav-lang">
+                    русский
+                </a>
+            </div>
+    
+            <div class="footer__app app">
+                <a href="#" class="app__link">
+                    <img src="icons/apps/available-on-the-app-store.svg" alt="app-store">
+                </a>
+                <a href="#" class="app__link">
+                    <img src="icons/apps/get-it-on-google-play.svg" alt="google-play">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

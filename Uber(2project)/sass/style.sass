@@ -51,6 +51,7 @@ $pink-color: #FF5656
 nav
     height: 50px
     background-color: #212121
+    
 
 .header__menu
     display: flex
@@ -331,7 +332,7 @@ nav
             font-weight: 300
             font-size: 17px
             color: #222222
-            margin-top: 5px
+            margin-top: 8px
             &:first-child
                 margin-top: 0
             &::before
@@ -351,3 +352,107 @@ nav
             background: url('../icons/check_red.png') center center/cover no-repeat
         .require__block-title
             color: $pink-color
+
+.cities
+    position: relative
+    padding: 49px 0
+    background: url('../img/world_bg.jpg') center center/contain no-repeat
+    background-color: #080810
+    min-height: 716px
+    &__link
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+        font-weight: 400
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        color: #1FBAD6
+        transition: all 0.4s
+        &:hover
+            color: #fff
+            text-decoration: none
+
+.footer
+    padding: 11px 22px
+    &__divider
+        margin: 0 auto
+        width: 300px
+        height: 7px
+        background-color: $blue-color
+    &__wrapper
+        margin-top: 31px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .social,
+        .nav,
+        .app
+            width: 33%
+    &__nav
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-t
+            a
+                font-weight: 300
+                font-size: 15px
+                text-transform: uppercase
+                color: #070716
+                &:not(:last-child)
+                    margin-right: 25px
+                &:hover
+                    text-decoration: none
+                    color: $blue-color
+        &-b
+            a
+                font-weight: 300
+                font-size: 11px
+                text-transform: uppercase
+                color: #999999
+                &:not(:last-child)
+                    margin-right: 15px
+
+        &-lang
+            margin-top: 15px
+            font-weight: 400
+            font-size: 11px
+            text-align: center
+            text-transform: uppercase
+            color: #1FBAD6
+
+.social
+    width: 33%
+    display: flex
+    justify-content: flex-start
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 35px
+        height: 35px
+        background: #070716
+        border-radius: 100%
+        transition: all 0.4s
+        &:not(:last-child)
+            margin-right: 6px
+        &:hover
+            text-decoration: none
+        i
+            color: #fff
+            transition: all 0.4s
+            &:hover
+                color: $blue-color
+
+.app
+    display: flex
+    justify-content: flex-end
+    a
+        &:not(:last-child)
+            margin-right: 15px
+        &:hover
+            text-decoration: none
+        
+        img
+            max-width: 100px
