@@ -345,6 +345,9 @@ nav
 
 .footer
     padding: 11px 22px
+    &__wrapper > div
+        width: 33%    
+    
     &__divider
         margin: 0 auto
         width: 300px
@@ -355,10 +358,6 @@ nav
         display: flex
         align-items: center
         justify-content: space-between
-        .social,
-        .nav,
-        .app
-            width: 33%
     &__nav
         display: flex
         flex-direction: column
@@ -392,7 +391,6 @@ nav
             color: #1FBAD6
 
 .social
-    width: 33%
     display: flex
     justify-content: flex-start
     a

@@ -451,6 +451,9 @@ nav {
 .footer {
   padding: 11px 22px;
 }
+.footer__wrapper > div {
+  width: 33%;
+}
 .footer__divider {
   margin: 0 auto;
   width: 300px;
@@ -468,11 +471,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.footer__wrapper .social,
-.footer__wrapper .nav,
-.footer__wrapper .app {
-  width: 33%;
 }
 .footer__nav {
   display: -webkit-box;
@@ -518,7 +516,6 @@ nav {
 }
 
 .social {
-  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,8 +589,29 @@ nav {
   .advantages .item__body {
     width: 300px;
   }
+
+  .mobile__item {
+    max-width: 100%;
+  }
+  .mobile__item-subtitle {
+    font-size: 22px;
+  }
+
+  .footer__nav-t a:not(:last-child) {
+    margin-right: 14px;
+  }
+  .footer__nav-b a {
+    font-size: 10px;
+  }
+  .footer__nav-b a:not(:last-child) {
+    margin-right: 4px;
+  }
 }
 @media (max-width: 991px) {
+  .title {
+    font-size: 35px;
+  }
+
   .header__menu-item:not(:last-child) {
     border-right: 2px dotted #000;
     padding-right: 8px;
@@ -629,11 +647,94 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .advantages__item-img {
+    margin-right: 0;
+  }
   .advantages__item-body {
     margin-top: 20px;
   }
+
+  .choice__img {
+    max-width: 100%;
+  }
+
+  .footer__wrapper {
+    margin-top: 15px;
+  }
+  .footer .social a:not(:last-child), .footer .app a:not(:last-child) {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  .footer__social, .footer__app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__wrapper > div:first-child {
+    width: 20%;
+  }
+  .footer__wrapper > div:nth-child(2) {
+    width: 60%;
+  }
+  .footer__wrapper > div:last-child {
+    width: 20%;
+  }
 }
 @media (max-width: 767px) {
+  .title {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  nav {
+    position: relative;
+    height: 32px;
+  }
+  nav .hamburger {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 26px;
+    height: 12px;
+  }
+  nav .hamburger span {
+    display: block;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: background-color, -webkit-transform 0.4s;
+    transition: background-color, -webkit-transform 0.4s;
+    transition: background-color, transform 0.4s;
+    transition: background-color, transform 0.4s, -webkit-transform 0.4s;
+  }
+  nav .hamburger__active span {
+    margin-bottom: -2px;
+  }
+  nav .hamburger__active span:first-child {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+    background-color: red;
+  }
+  nav .hamburger__active span:last-child {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+    background-color: red;
+  }
+  nav .hamburger__active span:nth-child(2) {
+    display: none;
+  }
+
+  .header {
+    height: 32px;
+  }
   .header__menu {
     position: fixed;
     -webkit-box-orient: vertical;
@@ -666,5 +767,168 @@ nav {
   }
   .header__menu-link {
     font-size: 20px;
+  }
+
+  .promo__title {
+    line-height: 45px;
+    font-size: 36px;
+  }
+  .promo__subtitle {
+    line-height: 30px;
+    font-size: 23px;
+  }
+  .promo__text {
+    font-size: 16px;
+  }
+
+  .advantages .item__body {
+    width: 100%;
+  }
+
+  .choice {
+    min-height: 500px;
+  }
+  .choice .black {
+    height: 415px;
+  }
+
+  .cities {
+    background-size: cover;
+  }
+
+  .footer .app,
+.footer .nav {
+    margin-top: 20px;
+  }
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__wrapper > div:first-child, .footer__wrapper > div:last-child, .footer__wrapper > div:nth-child(2) {
+    width: 100%;
+  }
+  .footer__social, .footer__app {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .social a:not(:last-child),
+.footer .app a:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 567px) {
+  .title {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .subheader {
+    height: 62px;
+  }
+  .subheader__logo {
+    margin-top: 16px;
+  }
+  .subheader__phone {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .subheader__btn {
+    margin-top: 5px;
+    width: 140px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .promo {
+    padding: 150px 0 34px 0;
+    min-height: 400px;
+  }
+  .promo__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .promo__text {
+    display: none;
+  }
+  .promo__btn {
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .advantages .item__body-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .advantages .item__body-text {
+    font-size: 14px;
+  }
+
+  .mobile__item-subtitle {
+    padding: 0 30px;
+    font-size: 18px;
+  }
+
+  .choice {
+    padding: 25px 0 31px 0;
+    min-height: 393px;
+    background-image: none;
+  }
+  .choice .black {
+    height: 100%;
+  }
+  .choice__descr {
+    margin-top: 23px;
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .require {
+    padding: 22px 0 30px 0;
+  }
+  .require__block-list {
+    padding-left: 35px;
+  }
+  .require__block-title {
+    font-size: 16px;
+  }
+  .require__block-descr {
+    font-size: 14px;
+  }
+  .require__block-item {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .cities {
+    padding: 24px 0 30px 0;
+    min-height: 360px;
+  }
+  .cities__link {
+    bottom: 30px;
+    width: 100%;
+  }
+
+  .footer__divider {
+    width: 255px;
+  }
+  .footer__nav-t a {
+    font-size: 13px;
+  }
+  .footer__nav-b {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
