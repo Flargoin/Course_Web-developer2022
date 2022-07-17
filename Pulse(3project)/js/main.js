@@ -45,7 +45,43 @@ $(document).ready(function(){
       });
 
       /* Валидация формы */
-      $('#consultation-form, #consultation form, #order form').validate({
+      $('#consultation-form').validate({
+        rules: {
+          name: 'required',
+          phone: 'required',
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Введите своё имя",
+          phone: "Введите свой номер телефона",
+          email: {
+            required: "Введите свою почту",
+            email: "Введите корректный почтовый адрес"
+          }
+        }
+      });
+      $('#consultation form').validate({
+        rules: {
+          name: 'required',
+          phone: 'required',
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Введите своё имя",
+          phone: "Введите свой номер телефона",
+          email: {
+            required: "Введите свою почту",
+            email: "Введите корректный почтовый адрес"
+          }
+        }
+      });
+      $('#order form').validate({
         rules: {
           name: 'required',
           phone: 'required',
@@ -64,4 +100,6 @@ $(document).ready(function(){
         }
       });
 
+      /* Маска номера телефона */
+      $('input[name="phone"]').mask("+7 (999) 999-9999");
   });
