@@ -4,6 +4,24 @@ $(document).ready(function(){
         prevArrow: `<button type="button" class="slick-prev"><img src='img/icons/left.svg' alt='arrow-left'></button>`,
         nextArrow: `<button type="button" class="slick-next"><img src='img/icons/right.svg' alt='arrow-right'></button>`,
         speed: 1200,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              dots: true
+            }
+          }
+        ]
     });
 
     /* Табы */
